@@ -15,4 +15,13 @@ Why learn Javascript?
     – Used in mobile development (React Native, NativeScript, Ionic)
     – Used in desktop applicatiioin development (Electrron JS)
 
+What you will learn in this course
+
+    – Variables & Data Types
+    – Arrays
+    – Object Literals
+    – Methods for strings, arrays, objects, etc
+    – Loops - forr, while, for...of, forEach, map
+    – Conditionals (if, ternary & switch)
+    – Functions (normal & arrow)
 
