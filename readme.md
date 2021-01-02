@@ -25,3 +25,17 @@ What you will learn in this course
     – Conditionals (if, ternary & switch)
     – Functions (normal & arrow)
 
+Further Learning
+
+– modern Javascript from the beginning
+    21 Hour Udemy Course
+
+    Youtube
+
+        – Javascript DOM Crash Course - 4 parts
+        – JS OOP Crash Course
+        – High Order Array Methods Video
+        – Async JS Crash Course
+        – Fetch API & Ajax Crash Courses
+        – Vanilla JS Playlist (Full of small projects)
+        – Frameworks crash courses
