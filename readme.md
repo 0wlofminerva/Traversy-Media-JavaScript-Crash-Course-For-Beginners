@@ -64,7 +64,7 @@ Further Learning
     // outside of that statement there is another variable with the same name,
     // there can be a conflict, and it can cause problems, so for the most part you dont use var anymore.
 
-–let, const 
+– let, const 
 
     were added with ES6 or ES2015,
     ES stands for ECMAScript, so that was a huge upgrade to javascript,
@@ -94,12 +94,12 @@ console.log(age);
 
 //
 
-This begs the question, when do we use let and when do we use const?
-Some people just use let, other people do is:
-Always use const unless you know you are gonna reassign the value.
-This makes you code more robust, more secure, less prompt to errors
+    This begs the question, when do we use let and when do we use const?
+    Some people just use let, other people do is:
+    Always use const unless you know you are gonna reassign the value.
+    This makes you code more robust, more secure, less prompt to errors
 
-Am example of something I would reassign wouuld be a score in a game:
+Am example of something I would reassign would be a score in a game:
 
 let score; // Initialize
 
@@ -122,9 +122,49 @@ console.log(score);
 
 //
 
-But for the most part you are not gonna reassign the values like this:
-const score = 10;
-and when you are dealing with arrays, objects, and stuff, you can change the values within the array of objects, you just can reassing the entire thing.
+    But for the most part you are not gonna reassign the values like this:
+    const score = 10;
+    and when you are dealing with arrays, objects, and stuff, you can change the values within the array of objects, you just can reassing the entire thing.
+
+– Data Types
+
+    What types of data we can assign to these variables
+    We have permanent data types, which means the data is directly assign to memory, its not a resource
+
+    // String, Numbers, Boolean, null, undefined, Symbol*1
+    *1 Symbols was added in ES6, we are not going over symbols, it is beyond the scope of this tutorial, its not something that common.
+
+
+    const name = 'John'; // String, can have double or single quotes, semicolons are not mandatory
+    const age = 30; // Number its just a number with no quotes arround it
+    const rating = 4.5; // Decimal Number. Even thought it is a decimal, there is no flow or decimal data ttype in js its just a number
+    const isCool = true; // Boolean, its set either true or false, no quotes
+    const x = null; // null means its basically empty, its a variable but there is nothing in it
+    const y = undefined; // we can explicitly define undefined
+    let z; // or we can initialize something using let, if I do let z; with no value, its gonna be undefined aswell
+
+    consolet.log(typeof x)
+    
+    // if we wanna test the type we can do typeof and put the name of the varible
+
+    consolet.log(typeof name) --> string
+    consolet.log(typeof age) --> number
+    consolet.log(typeof rating) --> number
+    consolet.log(typeof isCool) --> boolean
+    consolet.log(typeof x) --> object*2
+    consolet.log(typeof y) --> undefined
+    consolet.log(typeof zs) --> undefined
+
+    *2 in the first implementation of javascript, Javascript values were represented as a type tag and a value, with the type tag for objects being 0, and null was rrepresented as the NULL pointer ( 0x00 on most platforms). As a result, null had 0 as a type tag, hence the bogus typeof return value (reference)
+
+    *2 In JavaScript null is "nothing". It is supposed to be something that doesn't exist. Unfortunately, in JavaScript, the data type of null is an object. You can consider it a bug in JavaScript that typeof null is an object.
+
+    Those are the main primitive data types, of course we have arrays, and object literals, and stuff like that. But those are onjects, primitive data types.
+
+    string number, boolean, null, undefined
+
+
+
 
 
 
