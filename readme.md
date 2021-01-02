@@ -128,6 +128,8 @@ console.log(score);
 
 – Data Types
 
+    – Primitive Data Types
+
     What types of data we can assign to these variables
     We have permanent data types, which means the data is directly assign to memory, its not a resource
 
@@ -162,6 +164,25 @@ console.log(score);
     Those are the main primitive data types, of course we have arrays, and object literals, and stuff like that. But those are onjects, primitive data types.
 
     string number, boolean, null, undefined
+
+    //
+
+    – Strings
+
+    const name = 'John';
+    const age = 30;
+
+    // Concatenation
+    console.log('My name is ' + name + 'and I am ' + age); // Older method concatenation. 'string' + plus sign to concatenate on the variable, same on the other side, use the plus sign & concatenate the rest of the string, and the same with the age variable
+
+    // Template String ES6
+    console.log(`My name is ${name} and I am ${age}`); // instead of quotes use backticks, whenever we use a variable we use this syntax ${}, money sign & curly braces
+
+    const hello = `My name is ${name} and I am ${age}`; // We can assign this to a variable
+    console.log(hello);
+
+    
+
 
 
 
