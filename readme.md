@@ -6,3 +6,5 @@ What is Javascript?
     – Conforms to the ECMAScript specification
     – Multi-paradigm
     – Runs on  the client/browser as well as on the server (Node.js)
+
+
