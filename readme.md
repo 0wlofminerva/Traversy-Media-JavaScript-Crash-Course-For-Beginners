@@ -469,6 +469,36 @@ Arrays
 
     ... pears is has gone, it pops the last one off.
 
+    Another thing if you want to check if something is an array, you can do ...
+
+    console.log(Array.isArray());
+
+    and pass in the variable 'fruits'
+
+    console.log(Array.isArray(fruits));
+
+    //
+
+    const fruits = ['apples', 'oranges', 'pears'];
+
+    console.log(Array.isArray(fruits));
+
+    ... and you  can see it gives us true
+
+    true
+
+    //
+
+    ... if I were to put lets say a string ...
+
+    const fruits = ['apples', 'oranges', 'pears'];
+
+    console.log(Array.isArray('hello'));
+
+    ... we get false
+
+    false
+
 
 
 
