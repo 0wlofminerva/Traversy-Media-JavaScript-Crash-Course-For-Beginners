@@ -1004,6 +1004,104 @@ High Order Array Methods
 
     //
 
+    const todoCompleted = todos.filter(function(todo){
+        return todo.isCompleted === true;
+    }).map(function(todo) {
+        return todo.text;
+    })
+
+    console.log(todoCompleted);
+
+    // These are very powerful, it is functional programming, you can really manipulate data, pretty much however you want
+
+Conditionals
+
+    const x = '10';
+
+    if (x == 10) {
+    console.log('x is 10');
+    }
+
+    //
+
+    x is 10
+
+    //
+
+    const x = '10';
+
+    if (x === 10) {
+    console.log('x is 10');
+    }
+
+    //
+
+    string and number, dont match data type, its not gonna be true
+
+    //
+
+const x = 20;
+
+if (x === 10) {
+	console.log('x is 10');
+} else {
+	console.log('x is NOT 10');
+}
+
+//
+
+x is NOT 10
+
+//
+
+const x = 20;
+
+if (x === 10) {
+	console.log('x is 10');
+} else if (x > 10) {
+	console.log('x is greater than 10');
+} else {
+	console.log('x is less than 10');
+}
+
+//
+
+x is greater than 10
+
+//
+
+const x = 10;
+
+if (x === 10) {
+	console.log('x is 10');
+} else if (x > 10) {
+	console.log('x is greater than 10');
+} else {
+	console.log('x is less than 10');
+}
+
+//
+
+x is 10
+
+//
+
+const x = 4;
+
+if (x === 10) {
+	console.log('x is 10');
+} else if (x > 10) {
+	console.log('x is greater than 10');
+} else {
+	console.log('x is less than 10');
+}
+
+//
+
+x is less than 10
+
+
+
 
 
 
