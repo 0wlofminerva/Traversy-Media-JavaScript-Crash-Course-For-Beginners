@@ -1,7 +1,3 @@
-const name = 'John';
-const age = 30;
+const s = 'technology, computers, it, code';
 
-// Concatenation
-
-const hello = `My name is ${name} and I am ${age}`;
-console.log(hello);
+console.log(s.split(', '));

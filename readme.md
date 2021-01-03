@@ -52,6 +52,8 @@ Further Learning
     // console.warn('This is a warning');
     // Etc ...
 
+var, let, const
+
 – var, let, const
 
     var, youu dont want really use it anymore,
@@ -64,7 +66,11 @@ Further Learning
     // outside of that statement there is another variable with the same name,
     // there can be a conflict, and it can cause problems, so for the most part you dont use var anymore.
 
+let, const
+
 – let, const 
+
+    let & const have a block-level scope
 
     were added with ES6 or ES2015,
     ES stands for ECMAScript, so that was a huge upgrade to javascript,
@@ -126,6 +132,8 @@ console.log(score);
     const score = 10;
     and when you are dealing with arrays, objects, and stuff, you can change the values within the array of objects, you just can reassing the entire thing.
 
+Data types
+
 – Data Types
 
     – Primitive Data Types
@@ -167,6 +175,8 @@ console.log(score);
 
     //
 
+strings
+
     – Strings
 
     const name = 'John';
@@ -181,11 +191,90 @@ console.log(score);
     const hello = `My name is ${name} and I am ${age}`; // We can assign this to a variable
     console.log(hello);
 
+    // A cuople couple of String properties & methods
+
+    const s = 'Hello World'; // String
+
+    console.log(s.lenght) // a property doesnt have parentesis
+    console.log(variable.property)
+    console.log(variable.method()) // if it has parentesis is a method
+
+    //
+
+    const s = 'Hello World';
+
+    console.log(s.toUpperCase()); // A method is basically a function that is associated with an object
+
+    console.log(toLowerCase());
+    console.log(s.substring(0, 5)); // a substring, it takes two indexes, where you want to start and end, it actually stop before five
+
+    Hello
+
+    //
+
+    console.log(s.substring(0, 5).toUpperCase()); // you can tack on other methods aswell
+
+    split a string into an array, a method called split, as a parameter it takes whatever youu can split by, if you want to split by letter, you put empty quotes without a space
+
+    const s = 'Hello World!'
+
+    console.log(s.split(''));
+
+        (12) […]
+    ​
+    0: "H"
+    ​
+    1: "e"
+    ​
+    2: "l"
+    ​
+    3: "l"
+    ​
+    4: "o"
+    ​
+    5: " "
+    ​
+    6: "W"
+    ​
+    7: "o"
+    ​
+    8: "r"
+    ​
+    9: "l"
+    ​
+    10: "d"
+    ​
+    11: "!"
+    ​
+    length: 12
+    ​
+    <prototype>: Array []
+
+    a lot of times what we will do is, let´s say we have like a form, we are adding a block post, and we are adding tags, you might have:
+
+    const s = 'technology, computers, it, code';
+
+    and let´s say you wanna take that string and create an array from it. Now, as a separator in this case we would use coma space, because in between each word there is a coma space, so I put it in the method, ... 
     
+    console.log(s.split(', '));
 
+    //
 
+    const s = 'technology, computers, it, code';
 
+    console.log(s.split(', '));
 
+    //
+
+    Array(4) [ "technology", "computers", "it", "code" ]
+    
+    ... and with that I have an array of four values, and we have each word in each array value.
+
+    it´s pretty handy because you can insert that into a data base, and you can search to it, and stuff like that. So, it comes in handy.
+
+Arrays
+
+    – Arrays
 
 
 
