@@ -876,9 +876,94 @@ Loops
         i++;
     }
 
+    Loop Through arrays
+
+    const todos = [
+        {
+            id: 1,
+            text: 'Take out trash',
+            isCompleted: true,
+        },
+        {
+            id: 2,
+            text: 'Meeting with boss',
+            isCompleted: true,
+        },
+        {
+            id: 3,
+            text: 'Dentist appt',
+            isCompleted: false,
+        },
+    ];
+
+    for(let i = 0; i < todos.length; i++) {
+        console.log(todos[i].text);
+    }
+
+    //
+
+    Object { id: 1, text: "Take out trash", isCompleted: true }
+    main.js:20:10
+    Object { id: 2, text: "Meeting with boss", isCompleted: true }
+    main.js:20:10
+    Object { id: 3, text: "Dentist appt", isCompleted: false }
+
+    //
+
+    for(let todo of todos) {
+        console.log(todo.text)
+    }
+
+    //
+
+    Take out trash main.js:20:10
+    Meeting with boss main.js:20:10
+    Dentist appt
+
+    //
+
+    for(let todo of todos) {
+        console.log(todo.id)
+    }
+
+    //
+
+    1 main.js:20:10
+    2 main.js:20:10
+    3
+
+    //
+
+High Order Array Methods
+
+    // forEach
+    loops through them
+
+    // map
+    allows to create an array from an array
+
+    // filter
+    allows to create a new array based on a condition
+
+    // forEach, map, filter
+    todos.forEach(function(todo){
+        console.log(todo.text);
+    });
+
+    High Order Arrray Methods, takes in as a parameter a function, we pass in a callback function that takes in, ... it can take multiple parameters, but the first is gonna be  the variable that you are gonna use as each item, or in this case each todo
+
+    //
+
+    you can see that we are getting the text of each todo
+
+    //
+
+    Take out trash main.js:20:10
+    Meeting with boss main.js:20:10
+    Dentist appt
+
+    // This looks much better with arrow functions
     
-
-
 
 
 
