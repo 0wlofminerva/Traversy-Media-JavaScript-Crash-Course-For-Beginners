@@ -745,6 +745,74 @@ Object { firstName: "John", lastName: "Doe", age: 30, hobbies: (3) […], addres
 
 //
 
+A lot of the time you gonna be dealing with arrays of objects, ...
+
+//
+
+const todos = [ // Array uses brackets
+	{ // We want each value on the array to be an object
+		id: 1,
+		text: 'Take out trash',
+		isCompleted: true,
+	},
+	{
+		id: 2,
+		text: 'Meeting with boss',
+		isCompleted: true,
+	},
+	{
+		id: 3,
+		text: 'Dentist appt',
+		isCompleted: false,
+	},
+];
+
+console.log(todos);
+
+// If I  were to console log todos, we see that we have an array of three values, which are all objects
+
+(3) […]
+​
+0: Object { id: 1, text: "Take out trash", isCompleted: true }
+​
+1: Object { id: 2, text: "Meeting with boss", isCompleted: true }
+​
+2: Object { id: 3, text: "Dentist appt", isCompleted: false }
+​
+length: 3
+
+//
+
+If we want to warp let´s say, this text, Meeting with boss ...
+
+//
+
+const todos = [
+	{
+		id: 1,
+		text: 'Take out trash',
+		isCompleted: true,
+	},
+	{
+		id: 2,
+		text: 'Meeting with boss',
+		isCompleted: true,
+	},
+	{
+		id: 3,
+		text: 'Dentist appt',
+		isCompleted: false,
+	},
+];
+
+console.log(todos[1].text); // its the second value in the array, so that is the [1] index, we want just the text property
+
+//
+
+Meeting with bosss
+
+//
+
 
 
 

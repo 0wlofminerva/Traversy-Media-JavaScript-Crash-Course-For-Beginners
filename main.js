@@ -1,21 +1,19 @@
-const person = {
-	firstName: 'John',
-	lastName: 'Doe',
-	age: 30,
-	hobbies: ['music', 'movies', 'sports'],
-	address: {
-		street: '50 main st',
-		city: 'Boston',
-		state: 'MA',
+const todos = [
+	{
+		id: 1,
+		text: 'Take out trash',
+		isCompleted: true,
 	},
-};
+	{
+		id: 2,
+		text: 'Meeting with boss',
+		isCompleted: true,
+	},
+	{
+		id: 3,
+		text: 'Dentist appt',
+		isCompleted: false,
+	},
+];
 
-person.email = 'john@gmail.com';
-
-console.log(person);
-
-//
-
-Object { firstName: "John", lastName: "Doe", age: 30, hobbies: (3) […], address: {…}, email: "john@gmail.com" }
-
-//
+console.log(todos[1].text); // its the second value in the array, so that is the [1] index, we want just the text property
