@@ -617,201 +617,240 @@ Object Literals
 	},
 };
 
-console.log(person.hobbies[1]);
+    console.log(person.hobbies[1]);
 
-//
+    //
 
-movies
+    movies
 
-//
+    //
 
-... if we want to get the 'city' in the addres object, we would do ...
+    ... if we want to get the 'city' in the addres object, we would do ...
 
-console.log(person.address.city);
+    console.log(person.address.city);
 
-//
+    //
 
-... and we get Boston
+    ... and we get Boston
 
-//
+    //
 
-Boston
+    Boston
 
-//
+    //
 
-We can also use destructuring, if we want to create variables, we wnat these as actual variables, we can do ...
+    We can also use destructuring, if we want to create variables, we wnat these as actual variables, we can do ...
 
-const { firstName, lastName } = person;
+    const { firstName, lastName } = person;
 
-think of this, not as assigning something, but pulling this out of this person person object.
+    think of this, not as assigning something, but pulling this out of this person person object.
 
-const { firstName, lastName } = person;
+    const { firstName, lastName } = person;
 
-console.log(firstName);
+    console.log(firstName);
 
-//
+    //
 
-const person = {
-	firstName: 'John',
-	lastName: 'Doe',
-	age: 30,
-	hobbies: ['music', 'movies', 'sports'],
-	address: {
-		street: '50 main st',
-		city: 'Boston',
-		state: 'MA',
-	},
-};
+    const person = {
+        firstName: 'John',
+        lastName: 'Doe',
+        age: 30,
+        hobbies: ['music', 'movies', 'sports'],
+        address: {
+            street: '50 main st',
+            city: 'Boston',
+            state: 'MA',
+        },
+    };
 
-const { firstName, lastName } = person;
+    const { firstName, lastName } = person;
 
-console.log(firstName);
+    console.log(firstName);
 
-//
+    //
 
-... you see get John
+    ... you see get John
 
-John
+    John
 
-//
+    //
 
-Now if it is an embeded object like address, what we could do is ...
+    Now if it is an embeded object like address, what we could do is ...
 
-const { firstName, lastName, address: { city } } = person;
+    const { firstName, lastName, address: { city } } = person;
 
-console.log(city);
+    console.log(city);
 
-//
+    //
 
-const person = {
-	firstName: 'John',
-	lastName: 'Doe',
-	age: 30,
-	hobbies: ['music', 'movies', 'sports'],
-	address: {
-		street: '50 main st',
-		city: 'Boston',
-		state: 'MA',
-	},
-};
+    const person = {
+        firstName: 'John',
+        lastName: 'Doe',
+        age: 30,
+        hobbies: ['music', 'movies', 'sports'],
+        address: {
+            street: '50 main st',
+            city: 'Boston',
+            state: 'MA',
+        },
+    };
 
-const {
-	firstName,
-	lastName,
-	address: { city },
-} = person;
+    const {
+        firstName,
+        lastName,
+        address: { city },
+    } = person;
 
-console.log(city);
+    console.log(city);
 
-//
+    //
 
-... we get Boston
+    ... we get Boston
 
-Boston
+    Boston
 
-//
+    //
 
-Now, destructuring is kind of advanced, again is part of ES6, os a new feature, rrelatively new, ...
+    Now, destructuring is kind of advanced, again is part of ES6, os a new feature, rrelatively new, ...
 
-//
+    //
 
-We can also add properties, ...
+    We can also add properties, ...
 
-person.email = 'john@gmail.com'
+    person.email = 'john@gmail.com'
 
-console.log(person);
+    console.log(person);
 
-//
+    //
 
-const person = {
-	firstName: 'John',
-	lastName: 'Doe',
-	age: 30,
-	hobbies: ['music', 'movies', 'sports'],
-	address: {
-		street: '50 main st',
-		city: 'Boston',
-		state: 'MA',
-	},
-};
+    const person = {
+        firstName: 'John',
+        lastName: 'Doe',
+        age: 30,
+        hobbies: ['music', 'movies', 'sports'],
+        address: {
+            street: '50 main st',
+            city: 'Boston',
+            state: 'MA',
+        },
+    };
 
-person.email = 'john@gmail.com';
+    person.email = 'john@gmail.com';
 
-console.log(person);
+    console.log(person);
 
-//
+    //
 
-Object { firstName: "John", lastName: "Doe", age: 30, hobbies: (3) […], address: {…}, email: "john@gmail.com" }
+    Object { firstName: "John", lastName: "Doe", age: 30, hobbies: (3) […], address: {…}, email: "john@gmail.com" }
 
-//
+    //
 
-A lot of the time you gonna be dealing with arrays of objects, ...
+    A lot of the time you gonna be dealing with arrays of objects, ...
 
-//
+    //
 
-const todos = [ // Array uses brackets
-	{ // We want each value on the array to be an object
-		id: 1,
-		text: 'Take out trash',
-		isCompleted: true,
-	},
-	{
-		id: 2,
-		text: 'Meeting with boss',
-		isCompleted: true,
-	},
-	{
-		id: 3,
-		text: 'Dentist appt',
-		isCompleted: false,
-	},
-];
+    const todos = [ // Array uses brackets
+        { // We want each value on the array to be an object
+            id: 1,
+            text: 'Take out trash',
+            isCompleted: true,
+        },
+        {
+            id: 2,
+            text: 'Meeting with boss',
+            isCompleted: true,
+        },
+        {
+            id: 3,
+            text: 'Dentist appt',
+            isCompleted: false,
+        },
+    ];
 
-console.log(todos);
+    console.log(todos);
 
-// If I  were to console log todos, we see that we have an array of three values, which are all objects
+    // If I were to console log todos, we see that we have an array of three values, which are all objects
 
-(3) […]
-​
-0: Object { id: 1, text: "Take out trash", isCompleted: true }
-​
-1: Object { id: 2, text: "Meeting with boss", isCompleted: true }
-​
-2: Object { id: 3, text: "Dentist appt", isCompleted: false }
-​
-length: 3
+    (3) […]
+    ​
+    0: Object { id: 1, text: "Take out trash", isCompleted: true }
+    ​
+    1: Object { id: 2, text: "Meeting with boss", isCompleted: true }
+    ​
+    2: Object { id: 3, text: "Dentist appt", isCompleted: false }
+    ​
+    length: 3
 
-//
+    //
 
-If we want to warp let´s say, this text, Meeting with boss ...
+    If we want to grap let´s say, this text, Meeting with boss ...
 
-//
+    //
 
-const todos = [
-	{
-		id: 1,
-		text: 'Take out trash',
-		isCompleted: true,
-	},
-	{
-		id: 2,
-		text: 'Meeting with boss',
-		isCompleted: true,
-	},
-	{
-		id: 3,
-		text: 'Dentist appt',
-		isCompleted: false,
-	},
-];
+    const todos = [
+        {
+            id: 1,
+            text: 'Take out trash',
+            isCompleted: true,
+        },
+        {
+            id: 2,
+            text: 'Meeting with boss',
+            isCompleted: true,
+        },
+        {
+            id: 3,
+            text: 'Dentist appt',
+            isCompleted: false,
+        },
+    ];
 
-console.log(todos[1].text); // its the second value in the array, so that is the [1] index, we want just the text property
+    console.log(todos[1].text); // its the second value in the array, so that is the [1] index, we want just the text property
 
-//
+    //
 
-Meeting with bosss
+    Meeting with bosss
 
-//
+    //
+
+JSON
+
+    (Further notetaiking)
+    /.../
+
+    const todoJSON = JSON.stringlfy(todos);
+    console.log(todoJSON);
+
+    //
+
+    const todos = [
+        {
+            id: 1,
+            text: 'Take out trash',
+            isCompleted: true,
+        },
+        {
+            id: 2,
+            text: 'Meeting with boss',
+            isCompleted: true,
+        },
+        {
+            id: 3,
+            text: 'Dentist appt',
+            isCompleted: false,
+        },
+    ];
+
+    const todoJSON = JSON.stringify(todos);
+    console.log(todoJSON);
+
+    // a JSON string how we would send data to a server
+
+    [{"id":1,"text":"Take out trash","isCompleted":true},{"id":2,"text":"Meeting with boss","isCompleted":true},{"id":3,"text":"Dentist appt","isCompleted":false}]
+
+    //
+
+
 
 
 
