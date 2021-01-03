@@ -1,3 +1,3 @@
-const s = 'technology, computers, it, code';
+const fruits = ['apples', 'oranges', 'pears'];
 
-console.log(s.split(', '));
+console.log(fruits);

@@ -272,9 +272,73 @@ strings
 
     it´s pretty handy because you can insert that into a data base, and you can search to it, and stuff like that. So, it comes in handy.
 
+Comments
+
+    // double forward slash. Line comments
+
+    /* multi
+    line 
+    comments
+    asterisk foward slash
+     */
+
 Arrays
 
     – Arrays
+
+    // Arrays - variables that holds multiple values
+    
+    The array constructor:
+    let´s create a variable called numbers, and set that to new Array, so when you see this 'new' keyword, this is a constructor, so we are constructing an array, and we can pass in, let´s put some numbers ...
+
+    const numbers = new Array(1,2,3,4,5);
+
+    console.log(numbers);
+
+    //
+
+    Array(5) [ 1, 2, 3, 4, 5 ]
+
+    // Opened
+
+        (5) […]
+    ​
+    0: 1
+    ​
+    1: 2
+    ​
+    2: 3
+    ​
+    3: 4
+    ​
+    4: 5
+    ​
+    length: 5
+    ​
+    <prototype>: Array []
+
+    ... and we get an array with five values, one to five, thts using the constructor
+
+    but, for the most part you are gonna set brackets, and you arre gonna create your array ...
+
+    const fruits = ['apples', 'oranges', 'pears', ]
+
+    console.log(fruits);
+
+    //
+
+    Array(3) [ "apples", "oranges", "pears" ]
+
+    // Now, in Javascript you can have multiple data types, within the same array, i can put a number in here, I can put a Boolean, whattever I want, and that´s fine.  In other languages you have to have the same data type in your array, in fact there is quite a few languages that you have to set the number aswell, which can be kind of a pain. So Javascript give you a  lot of freedom
+
+    const fruits = ['apples', 'oranges', 'pears', 10, true ]
+
+    console.log(fruits);
+
+    Javascript is not statically typed.
+    Typescript which is a superset of javascript, it´s basically javascript with some added features, and static typing is one of those.
+
+
 
 
 
