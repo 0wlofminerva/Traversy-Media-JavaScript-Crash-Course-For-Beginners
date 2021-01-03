@@ -530,7 +530,7 @@ Object Literals
     Now we are gonna talk about object literals. Object literals are key value pairs, something simple like a person ...
 
     const person = {
-        fisrtName: 'John', // string
+        firstName: 'John', // string
         lastName: 'Doe ', // string
         age: 30, // number
         hobbies: ['music', 'movies', 'sports'], // array, strings
@@ -556,7 +556,7 @@ Object Literals
     ... so this just show us the values ...
 
         const person = {
-        fisrtName: 'John',
+        firstName: 'John',
         lastName: 'Doe',
         age: 30,
         hobbies: ['music', 'movies', 'sports'],
@@ -606,7 +606,7 @@ Object Literals
     Let´s say that we wantt to get the movies value, to be printed out in the console ...
 
     const person = {
-	fisrtName: 'John',
+	firstName: 'John',
 	lastName: 'Doe',
 	age: 30,
 	hobbies: ['music', 'movies', 'sports'],
@@ -638,6 +638,113 @@ console.log(person.address.city);
 Boston
 
 //
+
+We can also use destructuring, if we want to create variables, we wnat these as actual variables, we can do ...
+
+const { firstName, lastName } = person;
+
+think of this, not as assigning something, but pulling this out of this person person object.
+
+const { firstName, lastName } = person;
+
+console.log(firstName);
+
+//
+
+const person = {
+	firstName: 'John',
+	lastName: 'Doe',
+	age: 30,
+	hobbies: ['music', 'movies', 'sports'],
+	address: {
+		street: '50 main st',
+		city: 'Boston',
+		state: 'MA',
+	},
+};
+
+const { firstName, lastName } = person;
+
+console.log(firstName);
+
+//
+
+... you see get John
+
+John
+
+//
+
+Now if it is an embeded object like address, what we could do is ...
+
+const { firstName, lastName, address: { city } } = person;
+
+console.log(city);
+
+//
+
+const person = {
+	firstName: 'John',
+	lastName: 'Doe',
+	age: 30,
+	hobbies: ['music', 'movies', 'sports'],
+	address: {
+		street: '50 main st',
+		city: 'Boston',
+		state: 'MA',
+	},
+};
+
+const {
+	firstName,
+	lastName,
+	address: { city },
+} = person;
+
+console.log(city);
+
+//
+
+... we get Boston
+
+Boston
+
+//
+
+Now, destructuring is kind of advanced, again is part of ES6, os a new feature, rrelatively new, ...
+
+//
+
+We can also add properties, ...
+
+person.email = 'john@gmail.com'
+
+console.log(person);
+
+//
+
+const person = {
+	firstName: 'John',
+	lastName: 'Doe',
+	age: 30,
+	hobbies: ['music', 'movies', 'sports'],
+	address: {
+		street: '50 main st',
+		city: 'Boston',
+		state: 'MA',
+	},
+};
+
+person.email = 'john@gmail.com';
+
+console.log(person);
+
+//
+
+Object { firstName: "John", lastName: "Doe", age: 30, hobbies: (3) […], address: {…}, email: "john@gmail.com" }
+
+//
+
 
 
 

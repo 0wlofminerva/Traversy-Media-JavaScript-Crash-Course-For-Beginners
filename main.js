@@ -1,5 +1,5 @@
 const person = {
-	fisrtName: 'John',
+	firstName: 'John',
 	lastName: 'Doe',
 	age: 30,
 	hobbies: ['music', 'movies', 'sports'],
@@ -10,4 +10,12 @@ const person = {
 	},
 };
 
-console.log(person.address.city);
+person.email = 'john@gmail.com';
+
+console.log(person);
+
+//
+
+Object { firstName: "John", lastName: "Doe", age: 30, hobbies: (3) […], address: {…}, email: "john@gmail.com" }
+
+//
