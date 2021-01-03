@@ -1040,65 +1040,118 @@ Conditionals
 
     //
 
-const x = 20;
+    const x = 20;
 
-if (x === 10) {
-	console.log('x is 10');
-} else {
-	console.log('x is NOT 10');
-}
+    if (x === 10) {
+        console.log('x is 10');
+    } else {
+        console.log('x is NOT 10');
+    }
 
-//
+    //
 
-x is NOT 10
+    x is NOT 10
 
-//
+    //
 
-const x = 20;
+    const x = 20;
 
-if (x === 10) {
-	console.log('x is 10');
-} else if (x > 10) {
-	console.log('x is greater than 10');
-} else {
-	console.log('x is less than 10');
-}
+    if (x === 10) {
+        console.log('x is 10');
+    } else if (x > 10) {
+        console.log('x is greater than 10');
+    } else {
+        console.log('x is less than 10');
+    }
 
-//
+    //
 
-x is greater than 10
+    x is greater than 10
 
-//
+    //
 
-const x = 10;
+    const x = 10;
 
-if (x === 10) {
-	console.log('x is 10');
-} else if (x > 10) {
-	console.log('x is greater than 10');
-} else {
-	console.log('x is less than 10');
-}
+    if (x === 10) {
+        console.log('x is 10');
+    } else if (x > 10) {
+        console.log('x is greater than 10');
+    } else {
+        console.log('x is less than 10');
+    }
 
-//
+    //
 
-x is 10
+    x is 10
 
-//
+    //
 
-const x = 4;
+    const x = 4;
 
-if (x === 10) {
-	console.log('x is 10');
-} else if (x > 10) {
-	console.log('x is greater than 10');
-} else {
-	console.log('x is less than 10');
-}
+    if (x === 10) {
+        console.log('x is 10');
+    } else if (x > 10) {
+        console.log('x is greater than 10');
+    } else {
+        console.log('x is less than 10');
+    }
 
-//
+    //
 
-x is less than 10
+    x is less than 10
+
+    //
+
+    ... so very simple else if
+
+    – Multiple Conditionals
+
+    const x = 4;
+    const y = 10;
+
+    if (x > 5 || y > 10) {
+        console.log('x is more than 5 or y is more than 10');
+    }
+
+    // I dont get either because x is not greater than 5 & y is not greater than 10
+
+    // if I change one of those to true it works
+
+    const x = 4;
+    const y = 11;
+
+    if (x > 5 || y > 10) {
+        console.log('x is more than 5 or y is more than 10');
+    }
+
+    // x is more than 5 or y is more than 10
+
+    //
+
+    const x = 4;
+    const y = 11;
+
+    if (x > 5 && y > 10) {
+        console.log('x is more than 5 or y is more than 10');
+    }
+
+    // if I set to && meaning 'and', it dooesn´t work boths need to be true. Which is much better than nested if statements
+
+    // you could do something like that ...
+
+        if(x > 5) {
+        if(y > 10) {
+            
+        }
+    }
+
+    // but the synthesized one is more cleaner.
+
+    // so that´s simple conditional
+
+
+
+
 
 
 
