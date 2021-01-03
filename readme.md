@@ -429,7 +429,7 @@ Arrays
 
     If we want to add it into the beginning, you can use unshift
 
-    fruits.unshits();
+    fruits.unshift();
 
     let´s say we want to add strawberries
 
@@ -451,8 +451,23 @@ Arrays
 
     ... and you see that strawberriies are added to the beginnings.
 
-    alright, and there is a lot of arrys methods, another one is pop. if youu wanna take the one
+    alright, and there is a lot of arrys methods, another one is pop. if you wanna take the last one off, ...
 
+    fruits.pop();
+
+    //
+
+    const fruits = ['apples', 'oranges', 'pears'];
+
+    fruits.pop();
+
+    console.log(fruits);
+
+    //
+
+    Array [ "apples", "oranges" ]
+
+    ... pears is has gone, it pops the last one off.
 
 
 

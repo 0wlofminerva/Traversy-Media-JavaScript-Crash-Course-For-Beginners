@@ -1,5 +1,5 @@
 const fruits = ['apples', 'oranges', 'pears'];
 
-fruits.unshift('strawberries');
+fruits.pop();
 
 console.log(fruits);
