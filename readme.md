@@ -499,7 +499,29 @@ Arrays
 
     false
 
+    //
 
+    ... if you ever wanna check if something is an array, put this in the conditional and get a true or false value
+
+    ... if you want to get an index of a certain value, you can use index of ...
+
+    console.log(fruits.indexOf());
+
+    console.log(fruits.indexOf('oranges'));
+
+    //
+
+    const fruits = ['apples', 'oranges', 'pears'];
+
+    console.log(fruits.indexOf('oranges'));
+
+    //
+
+    1
+
+    //
+
+    ... we can see that 1 is the index of oranges
 
 
 

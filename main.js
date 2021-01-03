@@ -1,3 +1,3 @@
 const fruits = ['apples', 'oranges', 'pears'];
 
-console.log(Array.isArray('hello'));
+console.log(fruits.indexOf('oranges'));
