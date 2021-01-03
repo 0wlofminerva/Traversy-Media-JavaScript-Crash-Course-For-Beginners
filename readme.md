@@ -523,6 +523,150 @@ Arrays
 
     ... we can see that 1 is the index of oranges
 
+    ... there is a bunch of other methods, is something that you want to look into. Brad Traversy´s Udemy javascript course go into a lot more, like concatenate arrays and stuuff like that, but these ara just simple common methods.
+
+Object Literals
+
+    Now we are gonna talk about object literals. Object literals are key value pairs, something simple like a person ...
+
+    const person = {
+        fisrtName: 'John', // string
+        lastName: 'Doe ', // string
+        age: 30, // number
+        hobbies: ['music', 'movies', 'sports'], // array, strings
+        address: { // embeded object. object within an object
+            street: '50 main st',
+            city: 'Boston',
+            state: 'MA'
+        }
+    }
+
+    console.log(person.fisrtName, person.lastName);
+
+    //
+
+    John Doe
+
+    //
+
+    ... if you were to alert this. You just gonna get this object object ... alert is not the way to do this kind of stuff.
+
+    //
+
+    ... so this just show us the values ...
+
+        const person = {
+        fisrtName: 'John',
+        lastName: 'Doe',
+        age: 30,
+        hobbies: ['music', 'movies', 'sports'],
+        address: {
+            street: '50 main st',
+            city: 'Boston',
+            state: 'MA',
+        },
+    };
+
+    console.log(person);
+
+    //
+
+    Object { fisrtName: "John", lastName: "Doe", age: 30, hobbies: (3) […], address: {…} }
+
+    // Opened
+
+        {…}
+    ​
+    address: Object { street: "50 main st", city: "Boston", state: "MA" }
+    ​
+    age: 30
+    ​
+    fisrtName: "John"
+    ​
+    hobbies: Array(3) [ "music", "movies", "sports" ]
+    ​
+    lastName: "Doe"
+
+    //
+
+    ... if yuou wanna access a single value we use the dot syntax ...
+
+    console.log(person.firstName);
+
+    ... and you can log more than one thing, if I use a comma, you can do ...
+
+    console.log(person.firstName, person.lastName)
+
+    ... it will give us both ...
+
+    John Doe
+
+    //
+
+    Let´s say that we wantt to get the movies value, to be printed out in the console ...
+
+    const person = {
+	fisrtName: 'John',
+	lastName: 'Doe',
+	age: 30,
+	hobbies: ['music', 'movies', 'sports'],
+	address: {
+		street: '50 main st',
+		city: 'Boston',
+		state: 'MA',
+	},
+};
+
+console.log(person.hobbies[1]);
+
+//
+
+movies
+
+//
+
+... if we want to get the 'city' in the addres object, we would do ...
+
+console.log(person.address.city);
+
+//
+
+... and we get Boston
+
+//
+
+Boston
+
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /.../
+
+
+
+
+
+
+
+
 
 
 
