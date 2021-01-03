@@ -340,7 +340,7 @@ Arrays
 
     //
 
-    const fruuits = ['apples', 'oranges', 'pears'];
+    const fruits = ['apples', 'oranges', 'pears'];
 
     cosole.log(fruits);
 
@@ -379,7 +379,7 @@ Arrays
 
     //
 
-    that´s why  you can pretty much use const with arrays, becaus there is not gonna be many types that you are gonna directly reassign it, you are just gonna manipulate it
+    that´s why you can pretty much use const with arrays, becaus there is not gonna be many types that you are gonna directly reassign it, you are just gonna manipulate it
 
     so if you wanna add to the end, doing iit this way ...
 
@@ -426,6 +426,32 @@ Arrays
     //
 
     ... mangos has been added to the end, no mattter how many are into the array.
+
+    If we want to add it into the beginning, you can use unshift
+
+    fruits.unshits();
+
+    let´s say we want to add strawberries
+
+    fruits.unshift('strawberries');
+
+    //
+
+    const fruits = ['apples', 'oranges', 'pears'];
+
+    fruits.unshift('strawberries');
+
+    console.log(fruits);
+
+    //
+
+    Array(4) [ "strawberries", "apples", "oranges", "pears" ]
+
+    //
+
+    ... and you see that strawberriies are added to the beginnings.
+
+    alright, and there is a lot of arrys methods, another one is pop. if youu wanna take the one
 
 
 
