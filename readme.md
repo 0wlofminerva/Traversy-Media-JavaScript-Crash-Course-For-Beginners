@@ -946,6 +946,8 @@ High Order Array Methods
     allows to create a new array based on a condition
 
     // forEach, map, filter
+
+    // forEach
     todos.forEach(function(todo){
         console.log(todo.text);
     });
@@ -963,7 +965,46 @@ High Order Array Methods
     Dentist appt
 
     // This looks much better with arrow functions
-    
+
+    // map
+
+    with map it returns an array
+
+    const todoText = todos.map(function(todo){
+        return todo.text;
+    });
+
+    console.log(todoText);
+
+    loop through and return the text
+
+    //
+
+    Array(3) [ "Take out trash", "Meeting with boss", "Dentist appt" ]
+
+    // filter
+
+    const todoCompleted = todos.filter(function(todo){
+        return todo.isCompleted === true;
+    });
+
+    console.log(todoCompleted);
+
+    // we have an  array of two values, the ones that are completted
+
+    Array [ {…}, {…} ]
+
+    // Opened
+
+    (2) […]
+​
+    0: Object { id: 1, text: "Take out trash", isCompleted: true }
+    ​
+    1: Object { id: 2, text: "Meeting with boss", isCompleted: true }
+
+    //
+
+
 
 
 
