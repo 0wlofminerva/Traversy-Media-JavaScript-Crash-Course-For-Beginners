@@ -338,6 +338,98 @@ Arrays
     Javascript is not statically typed.
     Typescript which is a superset of javascript, it´s basically javascript with some added features, and static typing is one of those.
 
+    //
+
+    const fruuits = ['apples', 'oranges', 'pears'];
+
+    cosole.log(fruits);
+
+    So we have our fruits what if we want to acces to one of these, like oranges
+
+    const fruits = ['apples', 'oranges', 'pears'];
+
+    console.log(fruits[1]); // Open up some brackets and put 1 in here
+
+    so if we check that out we get oranges. Now even though, oranges is the second one, the reason thatwe get it from one is becasue arrys is zero based, 0, 1, 2 – apples, oranges, pears
+
+    oranges 
+
+    //
+
+    const fruits = ['apples', 'oranges', 'pears'];
+
+    fruits[3] = 'grapes';
+
+    console.log(fruits[1]);
+
+    //
+
+    Array(4) [ "apples", "oranges", "pears", "grapes" ]
+
+    grapes got added, notice we use const, you can add values to the array, you can manipulate it, you can add methods on it, using the const, the only thing you cant do is take the array and reassign it like this, then you got an error
+
+    const fruits = ['apples', 'oranges', 'pears'];
+    fruits = [];
+
+    console.log(fruits);
+
+    //
+
+    Uncaught TypeError: invalid assignment to const 'fruits'
+
+    //
+
+    that´s why  you can pretty much use const with arrays, becaus there is not gonna be many types that you are gonna directly reassign it, you are just gonna manipulate it
+
+    so if you wanna add to the end, doing iit this way ...
+
+    const fruits = ['apples', 'oranges', 'pears'];
+
+    fruits[3] = 'grapes';
+
+    console.log(fruits);
+
+    ... isn´t really the best way to do it, because you might not know exactly how many values are in the array, so in that case you use the push method ...
+
+    fruits.push('');
+
+    and push a value into the end
+
+    fruits.push('mangos');
+
+    //
+
+    const fruits = ['apples', 'oranges', 'pears'];
+
+    fruits.push('mangos');
+
+    console.log(fruits);
+
+    //
+
+    Array(4)[('apples', 'oranges', 'pears', 'mangos')];
+
+    // Opened
+
+    (4) […]
+​
+    0: "apples"
+    ​
+    1: "oranges"
+    ​
+    2: "pears"
+    ​
+    3: "mangos"
+    ​
+    length: 4
+
+    //
+
+    ... mangos has been added to the end, no mattter how many are into the array.
+
+
+
+
 
 
 
