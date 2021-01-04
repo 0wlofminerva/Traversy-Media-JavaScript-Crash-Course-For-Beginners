@@ -78,55 +78,55 @@ let, const
 
     The differences between let & const is that with let you can reassign values.
 
-let age = 30;
+    let age = 30;
 
-console.log(age);
+    console.log(age);
 
-//
+    //
 
-let age = 30;
-age = 31; // Reassigned variable
+    let age = 30;
+    age = 31; // Reassigned variable
 
-console.log(age);
+    console.log(age);
 
-//
+    //
 
-const age = 30; // const is short for constat, which means it can be change
-age = 31; // it cant be directly reassigned
+    const age = 30; // const is short for constat, which means it can be change
+    age = 31; // it cant be directly reassigned
 
-console.log(age);
+    console.log(age);
 
-// Uncaught TypeError: invalid assignment to const 'age'
+    // Uncaught TypeError: invalid assignment to const 'age'
 
-//
+    //
 
     This begs the question, when do we use let and when do we use const?
     Some people just use let, other people do is:
     Always use const unless you know you are gonna reassign the value.
     This makes you code more robust, more secure, less prompt to errors
 
-Am example of something I would reassign would be a score in a game:
+    Am example of something I would reassign would be a score in a game:
 
-let score; // Initialize
+    let score; // Initialize
 
-score = 10;
+    score = 10;
 
-console.log(score);
+    console.log(score);
 
-//
+    //
 
-const score; // Even if we dont reassign it we cant even initialize
+    const score; // Even if we dont reassign it we cant even initialize
 
-console.log(score);
-// Uncaught SyntaxError: missing = in const declaration
+    console.log(score);
+    // Uncaught SyntaxError: missing = in const declaration
 
-// Because you have to add a value if you use const
+    // Because you have to add a value if you use const
 
-const score = 10;
+    const score = 10;
 
-console.log(score);
+    console.log(score);
 
-//
+    //
 
     But for the most part you are not gonna reassign the values like this:
     const score = 10;
@@ -1589,6 +1589,55 @@ Object Oriented Programming
 
 Prototypes
 
+    ... I want to talk a little bit about protoypes, because the above exercise isnt the best way to do it ...
+
+    ... if I were to console log person1, and take a look down in the console ...
+    ... we have the properties, firstName, lastName, getFullBirth, getFullName ... however we also have the  function right in the object ... now, notice the __proto__,
+    ... this is the way we can  see the proptotype, is another object, but we can attach properties and methods to the prototype, you can see we have a constructor in here, ...
+    ... now what Brad Traversy like to do is not have the fuunctions with every object instance, because we might not need to use these, so we want to put these in the proptotype ... so the way we can do that is under the function ...
+
+    ... use Person.prototype, and then name it, we will say getBirthYear, equals function(), ... and the return line from the constructor function, set it in the prototype function, and completely get rid off the previous return line in the constructor, ... and do the same with the getFullName, ... we can say person.prototype, so we add on a prototype a method 'getFullName', which is a function, and grap the return of the constructor functioon and set it right in there.
+
+    //
+
+    // Construction function
+    function Person(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+
+    Person.prototype.getBirthYear = function () {
+        return this.dob.getFullYear();
+    };
+
+    Person.prototype.getFullName = function () {
+        return `${this.firstName} ${this.lastName}`;
+    };
+
+    // Instantiate object
+    const person1 = new Person('John', 'Doe', '4-3-1980');
+    const person2 = new Person('Mary', 'Smith', '4-3-1970');
+
+    ... so now I am able to call these methods, so I can do ...
+
+    console.log(person2.getFullName());
+    console.log(person1);
+
+    ... and it works ...
+
+    // Mary Smith
+
+    ... and if you look at the console log of the person, notice that you dont see the function here, right in the object, but if we look in the prototype, then we have getBirthYear, and getFullName, along with the constructor ...
+
+
+    ... Alright, that´s basically object oriented programming in ES5, so preclases, with ES6
+
+
+
+
+
+
 
 
 
@@ -1646,6 +1695,28 @@ Prototypes
 
 
     /.../
+
+        TIMESTAMPS:
+    Script Tags - 6:46
+    Console Output - 8:20
+    Variables - 11:15
+    Data Types - 14:18
+    Strings & String Methods - 18:38
+    Arrays - 23:53
+    Object Literals - 30:09
+    Arrays Of Objects & JSON - 34:20
+    Loops - 37:40
+    High Order Array Methods - 42:24
+    Conditionals - 46:30
+    Functions - 53:23
+    Arrow Functions - 56:22
+    Constructor Functions & Prototypes - 59:25
+    ES6 Classes - 1:07:21
+    Window Object & DOM - 1:10:30
+    DOM Selection - 1:14:50
+    Manipulating The DOM - 1:20:05
+    Events - 1:24:40
+    Form Script - 1:30:39
 
 
 
