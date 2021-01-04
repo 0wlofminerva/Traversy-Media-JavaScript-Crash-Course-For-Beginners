@@ -1747,7 +1747,9 @@ Window Object & DOM
 
     ... so as far a selectors go ...
 
-    ... we have Single element selectors, and we  have multiple elements selectors ...
+    ... we have Single element selectors, and we have multiple elements selectors ...
+
+Single Element Selector
 
     ... so as far as single element selector, we have document, ok, these are gonna be in the document object ...
     ... so in the browser we have what is called the window object,... and the window object is the parent object of the browser, ... you can see that it actually have the alert function, now, when we did alert, we did it like this, alert(1); ... that runs ... howeverr this is actually part of the window object ... I can say, window.alert(1) and that also works, since window is the very topo level, we dont actually have to do 'window.' for anything that is in window, and you see there is other stuff, like for instance, 'localStorage' thats a way to store stuff in your browser, thats part of the window object, you can get the innerHeight, these properties, innerHeight, innerWidth, the fetch API is in the window object, so the  whole fetch API to make HTTP request, the document its what I want to show you though, this is what makes up the DOM, the 'Document Object Model', and you can see there is other types of properties and methods and stuff like that ...
@@ -1786,6 +1788,30 @@ getElementById
     ... and we get the same thing
 
     <form id="my-form">
+
+    ... another one is querySelector, which is much newer than getElmentById, ... now fir a long time people used jquery, that is a javascript library, that made it easy to select other things than ids, so things like classes, tags themselves, pretty much anthing, ... and querySelector works just like jquery, for the most part in terms of selecting, single elments, so we can select anything, if we look here, if we wanna grab lets say the container, its a class, right, so we will say '.container' ...
+
+    //Single Element
+    console.log(document.querySelector('.container'));
+
+    ... you can see that its gonna log that ...
+
+    <section class="container">
+
+    ... we can actually use a tag, so if we do 
+
+    //Single Element
+    console.log(document.querySelector('h1'));
+
+    ...  and it will give us ...
+
+    <h1>
+
+    ... now like I sayed its a single element selector, so even if its more than one h1, its only gonna select the first one ...
+
+    ... now there is multiple Element Selctors, if you want to select more than one thing, so for instance ...
+
+
 
 
     
