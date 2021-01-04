@@ -1149,6 +1149,104 @@ Conditionals
 
     // so that´s simple conditional
 
+    – Ternary Operator js
+
+    Terniary Operator is basically a short hand if statement, its used a lot to assign variables based on a condition
+
+    //
+
+    const x = 10;
+
+    const color = x > 10 ? 'red' : 'blue';
+
+    console.log(color);
+
+    // blue, I get blue because x is not greater than x, its equal to 10
+
+    //
+
+    const x = 11;
+
+    const color = x > 10 ? 'red' : 'blue';
+
+    console.log(color);
+
+    // red, I get red because x is greater than 10
+
+    // the question mark '?' is the terniary operator, and it represents then, so if this is true, 'x > 10' then let set the color variable to red, 'else' which is represented with a colon ':' then let set it to blue. x > 10 ? 'red' : 'blue';
+
+    – Switches
+
+    switches are another way to evaluate a condition ...
+
+    const x = 11;
+
+    const color = x > 10 ? 'red' : 'blue';
+
+    switch (
+        color // to evaluate whatever the color is we set cases
+    ) {
+        case 'red':
+            console.log('color is red');
+            break;
+        case 'blue':
+            console.log('color is blue');
+            break;
+        default:
+            console.log('color is NOT red or blue');
+            break;
+    }
+
+    // color is red
+
+    // if I change this to 9
+
+    const x = 9;
+
+    const color = x > 10 ? 'red' : 'blue';
+
+    switch (
+        color // to evaluate whatever the color is we set cases
+    ) {
+        case 'red':
+            console.log('color is red');
+            break;
+        case 'blue':
+            console.log('color is blue');
+            break;
+        default:
+            console.log('color is NOT red or blue');
+            break;
+    }
+
+    // color is blue
+
+    // if it change to something else
+
+    const x = 9;
+
+    const color = 'green';
+
+    switch (
+        color // to evaluate whatever the color is we set cases
+    ) {
+        case 'red':
+            console.log('color is red');
+            break;
+        case 'blue':
+            console.log('color is blue');
+            break;
+        default:
+            console.log('color is NOT red or blue');
+            break;
+    }
+
+    // color is NOT red or blue
+
+Functions
+
+
+
 
 
 

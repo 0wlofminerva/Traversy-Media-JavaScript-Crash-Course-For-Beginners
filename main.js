@@ -1,8 +1,19 @@
-const x = 4;
-const y = 11;
+const x = 9;
 
-if (x > 5 && y > 10) {
-	console.log('x is more than 5 or y is more than 10');
+const color = 'green';
+
+switch (
+	color // to evaluate whatever the color is we set cases
+) {
+	case 'red':
+		console.log('color is red');
+		break;
+	case 'blue':
+		console.log('color is blue');
+		break;
+	default:
+		console.log('color is NOT red or blue');
+		break;
 }
 
-// if I set to && meaning 'and', it dooesn´t work boths need to be true
+// color is NOT red or blue
