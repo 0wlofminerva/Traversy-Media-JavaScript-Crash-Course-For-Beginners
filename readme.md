@@ -1411,6 +1411,113 @@ Functions
 
 Object Oriented Programming
 
+– Constructor Function
+
+    // now, we have already look at object literals, however we can construct objects using what is called the constructor function. Now there are two ways to do this, we can use constructor function, with prototypes, and we can use also ES6 clases, ...
+
+    ... so let´s say we want a person object, so we are gonna say: function Person, with a  capital 'P', when you create a constructor function it should have, ... it should start with a capital, ... and as far as parameters, you are gonna pass in the properties you wanna be able to set, so let´s do: 'firstName', 'lastName', and let´s do date of birth 'dob', ...
+
+    ... now when we pass then in, we wanna set them to the properties of the object, so we do that with 'this' keyword ...
+
+    // Construction function
+    function Person(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = dob;
+    }
+
+    ... and down here, we instantiate an object with a constructor function ...
+    ... we can create a variable, just let call it person1, and we will set it to new Person ...
+    ... remember we do a new Array earlier, that was a built in constructor, and there is a bunch, ...
+    ... we ceated a custom Person constructor, ... and this is  gonna take in a first name, a last name, a date of birth ...
+
+    // Instantiate object
+    const person1 = new Person('John', 'Doe', '4-3-1980');
+
+    // so we actually  just created a Person object, ... so console log person1
+
+    console.log(person1); 
+
+    // we save and you notice  that we have a persoon object, which looks just like the object  literal, however is prefixed like the actual name of the object, which is Person
+
+    main.js:11 Person {firstName: "John", lastName: "Doe", dob: "4-3-1980"}
+
+    //
+
+    // Construction function
+    function Person(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = dob;
+    }
+
+    // Instantiate object
+    const person1 = new Person('John', 'Doe', '4-3-1980');
+
+    console.log(person1);
+
+    //
+
+    main.js:11 Person {firstName: "John", lastName: "Doe", dob: "4-3-1980"}
+
+    //
+
+    // now, we can create as many person as we want, we can do person2, and pass in different values, like ...
+
+    const person2 = new Person('Mary', 'Smith', '4-3-1970');
+
+    //
+
+    // Construction function
+    function Person(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = dob;
+    }
+
+    // Instantiate object
+    const person1 = new Person('John', 'Doe', '4-3-1980');
+    const person2 = new Person('Mary', 'Smith', '4-3-1970');
+
+    console.log(person2.firstName);
+
+    // Mary
+
+    ... lets take a site route for a second, and talk aboout dates, because right now I passed the date of  birth as  a string, however we can turn this into a date object, by using a date constructor ...
+    ... so we have set it up here, we pass it in as string, and I am gonna set up to new Date and surround that string ...
+    ... now if I go down here and I print out the person´s date of birth ... 
+
+
+    // Construction function
+    function Person(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+
+    // Instantiate object
+    const person1 = new Person('John', 'Doe', '4-3-1980');
+    const person2 = new Person('Mary', 'Smith', '4-3-1970');
+
+    console.log(person2.dob);
+
+    // ... you can see we get an actual date object
+
+    main.js:12 Fri Apr 03 1970 00:00:00 GMT+0100 (hora estándar de Europa central)
+
+    ... and if you put it the time you can actually put in the  hoours minutes seconds, that will show up aswell ...
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
