@@ -1245,6 +1245,70 @@ Conditionals
 
 Functions
 
+    'function' keyword, a function that add two numbers
+
+    function addNums(num1, num2) { // Inside the parantesiis we can put parameters
+        console.log(num1 + num2); // We can do any kind of basic math
+
+    }
+
+    addNums(5,4); // function calling passing the parameters
+
+    // 9
+
+    //
+
+    function addNums(num1, num2) {
+        console.log(num1 + num2);
+    }
+
+    addNums();
+
+    // NaN, what it means is Not a Number, it should be a number but is not
+
+    //
+
+    ... with functions we  can set values for our parameters ...
+
+    //
+
+    function addNums(num1 = 1, num2 = 1) {
+        console.log(num1 + num2);
+    }
+
+    addNums();
+
+    // 2, i did not passed anithing in but is going to use these default values
+
+    //
+
+    function addNums(num1 = 1, num2 = 1) {
+        console.log(num1 + num2);
+    }
+
+    addNums(5, 5);
+
+    // 10, if I pass (5, 5), it´s gonna overwrite the default values
+
+    //
+
+    // ... Now, for the most part you are not gonna console log att a function, you are usually to return something from it
+
+    function addNums(num1 = 1, num2 = 1) {
+        return num1 + num2;
+    }
+
+    addNums(5, 5);
+
+    // Now if I save nothing is gona print in the console, because we havent logged anything, if we want to log we jus grap this whole thing in a console.log
+
+    function addNums(num1 = 1, num2 = 1) {
+        return num1 + num2;
+    }
+
+    console.log(addNums(5, 5));
+
+
 
 
 
