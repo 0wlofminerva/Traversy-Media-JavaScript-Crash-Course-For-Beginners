@@ -1624,14 +1624,120 @@ Prototypes
     console.log(person2.getFullName());
     console.log(person1);
 
+    //
+
+    // Construction function
+    function Person(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+
+    Person.prototype.getBirthYear = function () {
+        return this.dob.getFullYear();
+    };
+
+    Person.prototype.getFullName = function () {
+        return `${this.firstName} ${this.lastName}`;
+    };
+
+    // Instantiate object
+    const person1 = new Person('John', 'Doe', '4-3-1980');
+    const person2 = new Person('Mary', 'Smith', '4-3-1970');
+
+    console.log(person2.getFullName());
+    console.log(person1);
+
+
     ... and it works ...
 
     // Mary Smith
 
-    ... and if you look at the console log of the person, notice that you dont see the function here, right in the object, but if we look in the prototype, then we have getBirthYear, and getFullName, along with the constructor ...
+    ... and if you look at the console log of the person, notice that you dont see the function here, right in the object, but if we look in the prototype, then we have getBirthYear, and getFullName either, along with the constructor ...
+
+    ... Alright, that´s basically object oriented programming in ES5, so preclases, with ES6 classes were added to javascript...
+    ... now ... its important to know that with classes, it does the same exact thing under the hood, it adds the method to the prototype, so everything looks the same, however, is what is know as 'syntatic sugar', which it means that its a prettier way to write it, but it does the same thing under the hood ...
+
+    ... I am gonna leave this stuff here 'instantiate object' and I gonna replace this 'constructor function' with a class with methods ...
+
+ES6 Classes
+
+    ... so to create a class ... what we would is say class and the call it Person
+
+    // Class
+    class Person {}
+
+    ... just like we created the constructor function uphere ... we just add a function here, a 'method0 I should say, a 'method' is a function inside of a class, call constructor, and this is gonna take in the same stuff that the previous constructor function does, the properties ...
+
+    // Class
+    class Person {
+        constructor(firstName, lastName, dob) {}
+    
+    ... and we assign the properties, the same thing that we  did previously in the constructor function ...
+
+    // Class
+    class Person {
+        constructor(firstName, lastName, dob) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.dob = new Date(dob);
+        }
+
+    ... and any method that we want to add to this class such as, getBrthYear(), or getFullName(), instead of use this '.prototype' syntax ...
+
+        Person.prototype.getBirthYear = function () {
+            return this.dob.getFullYear();
+        };
+
+        ... we can  simply put it in here, si we can say ...
+
+    getBirthYear() {
+
+    }
+
+    ... and I grab the functionality passed in here
+
+    getBirthYear() {
+        return this.dob.getFullYear();
+    }
+
+    ... and let say we also want ...
+
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+
+    ... now this is doing the same thing, it just a prettier way, it´s using classes that are included in a lot of other programming, so it allows people that come form  other backgrounds to be familiar with this, rather than dealing with prototypes ...
+
+    // Class
+    class Person {
+        constructor(firstName, lastName, dob) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.dob = new Date(dob);
+        }
+
+        getBirthYear() {
+            return this.dob.getFullYear();
+        }
+
+        getFullName() {
+            return `${this.firstName} ${this.lastName}`;
+        }
+    }
+
+    // Instantiate object
+    const person1 = new Person('John', 'Doe', '4-3-1980');
+    const person2 = new Person('Mary', 'Smith', '4-3-1970');
+
+    console.log(person2.getFullName());
+    console.log(person1);
+
+    ... all the instantiation and all of that, it all works the same ...
+
+    ... we get the same result, so we call person2 getFullName, we instantiate Mary, and if we look at 'Person' we have the same properties, and if we look at the prototype we get getBirthName & getBirthName, so that adding these methods to the class, added them to  the prototype, just like we did before ... so thats why its called syntactic sugar, you are doing the same thing, you are just doing it in a different way, its a little prettier, and a little easier to write and read. So you  dont have to use classes, but I mean, I prefer them, because they are easier to write, I think they are more organize, ... so thats pretty much the basics of object oriented programming
 
 
-    ... Alright, that´s basically object oriented programming in ES5, so preclases, with ES6
 
 
 
