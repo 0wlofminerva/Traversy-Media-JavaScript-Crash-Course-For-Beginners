@@ -1308,6 +1308,113 @@ Functions
 
     console.log(addNums(5, 5));
 
+    – Arrow Functions
+
+    // ... as far ad arrrow functions go, they are very handy, and they clean things up quite a bit, they were introduced in ES6, also known as ES2015.
+    // so if we want to turn this into an arrow fuunction ...
+
+    // ... what we would is ... instead of using  the keyword 'function', we would name it as a variable, and then put an equal sign before the parentesis, and after the parameters we put what we call a fat arrow '=>'
+
+    const addNums = (num1 = 1, num2 = 1) => {
+        return num1 + num2;
+    };
+
+    console.log(addNums(5, 5));
+
+    // 10, we get the same thing
+
+    ... what is nice about this is, ... if it is just one expression, ...
+
+    const addNums = (num1 = 1, num2 = 1) => {
+        console.log(num1 + num2);
+    };
+
+    addNums(5, 5);
+
+    // 10
+
+    ... since we only have one expression meaning we dont have variables being assigned or any other lines, anything else happening, ...
+
+    const addNums = (num1 = 1, num2 = 1) => console.log(num1 + num2);
+
+    addNums(5, 5);
+
+    // 10
+
+    
+    ... we dont even need these cuurly braces, we can just do this all in one line, just like that ...
+
+    Alright, if you want to return something, this is even better, you dont event need the 'return' keyword, ...
+
+    const addNums = (num1 = 1, num2 = 1) => num1 + num2;
+
+    console.log(addNums(5, 5));
+
+    // 10
+
+    
+    ... we can just simply take away the console log, and put it down here ...
+
+    ... so no need to do return, in fact if you do this ...
+
+    ... it wont even work
+
+    //
+
+    const addNums = (num1 = 1, num2 = 1) => return num1 + num2;
+
+    console.log(addNums(5, 5));
+
+    // Uncaught SyntaxError: unexpected token: keyword 'return'
+
+    //
+
+    you can put your parentesis back, like that, and that would work ...
+
+    const addNums = (num1 = 1, num2 = 1) => {
+        return num1 + num2;
+    };
+
+    console.log(addNums(5, 5));
+
+    // 10
+
+    //
+
+    ... but you can get rid off the curly braces and the return, and just slim it down a lot ...
+
+    const addNums = (num1 = 1, num2 = 1) => num1 + num2;
+
+    console.log(addNums(5, 5));
+
+    // 10
+
+    ... Now if you only have one parameter, you dont even need a parentesis, ... so you can do ... 
+
+    const addNums = (num1) => num1 + 5;
+
+    console.log(addNums(5));
+
+    // 10
+
+    ... so you can see this cut things down ...
+    ... and is great to use with forEach or any of the array methods that we can pass in
+
+    // 
+
+    todos.forEach((todo) => console.log(todo)); // console log each todo
+
+    – The Lexical This
+
+    // ... so when you have the 'this' keyword the scoping is a little different, ...
+    ... it has an extra advantage when you use the 'this' keyword, in certain situations
+
+Object Oriented Programming
+
+
+
+
+
 
 
 
