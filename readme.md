@@ -1737,6 +1737,71 @@ ES6 Classes
 
     ... we get the same result, so we call person2 getFullName, we instantiate Mary, and if we look at 'Person' we have the same properties, and if we look at the prototype we get getBirthName & getBirthName, so that adding these methods to the class, added them to  the prototype, just like we did before ... so thats why its called syntactic sugar, you are doing the same thing, you are just doing it in a different way, its a little prettier, and a little easier to write and read. So you  dont have to use classes, but I mean, I prefer them, because they are easier to write, I think they are more organize, ... so thats pretty much the basics of object oriented programming
 
+Window Object & DOM
+
+    ... I have some ... 
+    
+    ... the DOM Ducument Object Model, its basically like a tree structure of your whole document, so your html tags and stuff like that, I do have a full apart crash course on Youtube called javascript DOM Crash Course, so if you wanna learn more about what we are going to talk about, check that course is four videos, they are lilke thirty or fourty minutes, there is a lot in it, you are gonna cover  the basic here ...
+
+    ... I want to talk about selection, selecting things from the DOM, we can actually take elements and put  it into variables, and stuff like that and work with them ...
+
+    ... so as far a selectors go ...
+
+    ... we have Single element selectors, and we  have multiple elements selectors ...
+
+    ... so as far as single element selector, we have document, ok, these are gonna be in the document object ...
+    ... so in the browser we have what is called the window object,... and the window object is the parent object of the browser, ... you can see that it actually have the alert function, now, when we did alert, we did it like this, alert(1); ... that runs ... howeverr this is actually part of the window object ... I can say, window.alert(1) and that also works, since window is the very topo level, we dont actually have to do 'window.' for anything that is in window, and you see there is other stuff, like for instance, 'localStorage' thats a way to store stuff in your browser, thats part of the window object, you can get the innerHeight, these properties, innerHeight, innerWidth, the fetch API is in the window object, so the  whole fetch API to make HTTP request, the document its what I want to show you though, this is what makes up the DOM, the 'Document Object Model', and you can see there is other types of properties and methods and stuff like that ...
+
+    ... so documents is what we want to use to select things for the document ...
+    ... so I want to say ...
+
+    document.
+
+getElementById
+
+    ... and one selector that is used to grab single elments is 'getElementById();' which has been arround for quite a while ...
+
+    document.getElementById();
+    
+     ... and we can pass it an 'id', if we look at our HTML we have a form that it has an 'id="my-form"', let´s say we wnat to grab that, we can just pass in ...
+
+     document.getElementById('my-form')
+
+     ... and what i do is console log this
+
+    //Single Element
+    console.log(document.getElementById('my-form'));
+    
+    ... if I save that you see that it actually log that element  down in the console ...
+
+    <form id="my-form">
+
+    ... and we can even assign this to a variable ...
+    ... we console log ..
+
+    //Single Element
+    const form = document.getElementById('my-form');
+    console.log(form);
+
+    ... and we get the same thing
+
+    <form id="my-form">
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /.../
+
+
+
 
 
 
