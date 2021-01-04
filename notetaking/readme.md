@@ -1811,6 +1811,28 @@ getElementById
 
     ... now there is multiple Element Selctors, if you want to select more than one thing, so for instance ...
 
+    //Single Element
+    // console.log(document.getElementById('my-form'));
+    // console.log(document.querySelector('h1'));
+
+    //Multiple element
+    console.log(document.querySelectorAll('.item'));
+
+    NodeList(3)[(li.item, li.item, li.item)];
+
+    //Multiple element
+    // console.log(document.querySelectorAll('.item'));
+    console.log(document.getElementsByClassName('item'));
+
+    HTMLCollection { 0: li.item, 1: li.item, 2: li.item, length: 3 }
+
+    //Multiple element
+    // console.log(document.querySelectorAll('.item'));
+    // console.log(document.getElementsByClassName('item'));
+    console.log(document.getElementsByClassName('li'));
+
+    HTMLCollection { length: 0 }
+
 
 
 
