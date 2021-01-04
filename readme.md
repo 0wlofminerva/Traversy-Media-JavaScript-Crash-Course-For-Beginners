@@ -1419,7 +1419,7 @@ Object Oriented Programming
 
     ... now when we pass then in, we wanna set them to the properties of the object, so we do that with 'this' keyword ...
 
-    // Construction function
+    // Constructor Function
     function Person(firstName, lastName, dob) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -1444,7 +1444,7 @@ Object Oriented Programming
 
     //
 
-    // Construction function
+    // Constructor Function
     function Person(firstName, lastName, dob) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -1468,7 +1468,7 @@ Object Oriented Programming
 
     //
 
-    // Construction function
+    // Constructor Function
     function Person(firstName, lastName, dob) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -1488,7 +1488,7 @@ Object Oriented Programming
     ... now if I go down here and I print out the person´s date of birth ... 
 
 
-    // Construction function
+    // Constructor Function
     function Person(firstName, lastName, dob) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -1506,6 +1506,97 @@ Object Oriented Programming
     main.js:12 Fri Apr 03 1970 00:00:00 GMT+0100 (hora estándar de Europa central)
 
     ... and if you put it the time you can actually put in the  hoours minutes seconds, that will show up aswell ...
+
+    ... so when you have a date object, there is a bunch of methods you can call on it, so for instance, we can do '.' dot, and in VSCode they actually show up in the metabox, so for instance, we can do getFullYear(), ... put it some parentesis, and we get ...
+
+    ... so we can really do different things with the dates, and format them in different ways ...
+
+    ... now ... I am going to show you that we can actually  add methods, which are basically functions to this person object ...
+
+    ...
+
+    this.getBirthYear = function() {
+            
+        };
+
+    ... and I am going to return from this function ...
+    ... this.dob ... because I can access the objects properties using 'this', and let´s use ... getFullYear();
+    
+    this.getBirthYear = function() {
+            return this.dob.getFullYear();
+        };
+
+    // ...
+
+    // Constructor Function
+    function Person(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+        this.getBirthYear = function () {
+            return this.dob.getFullYear();
+        };
+    }
+
+    // Instantiate object
+    const person1 = new Person('John', 'Doe', '4-3-1980');
+    const person2 = new Person('Mary', 'Smith', '4-3-1970');
+
+    // ... now down here I can call person1 and we can call this method getBirthYear(); ... we need to  log it though
+
+    console.log(person1.getBirthYear());
+
+    // ... You can create fuunctions like this
+
+    ... and we get 1980, brad gets 1980, I got NaN ...
+
+    ... let´s do one to get the full namme ...
+    ... so this.getFullName equals function ...
+    ... and  we just return ... we use a template literal here ... and ...
+
+    this.getFullName = function () {
+            return `${this.firstName} ${this.lastName}`;
+        };
+
+    ... let´s console log it ...
+
+    // lets run the method getFullName()
+
+    // Constructor Function
+    function Person(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+        this.getBirthYear = function () {
+            return this.dob.getFullYear();
+        };
+        this.getFullName = function () {
+            return `${this.firstName} ${this.lastName}`;
+        };
+    }
+
+    // Instantiate object
+    const person1 = new Person('John', 'Doe', '4-3-1980');
+    const person2 = new Person('Mary', 'Smith', '4-3-1970');
+
+    console.log(person1.getBirthYear());
+    console.log(person1.getFullName());
+
+    // ... and you get John Doe
+
+    ... you can put absolutely any functionality that you want here, ...
+    ... and you can integrate the different properties for each object ...
+
+Prototypes
+
+
+
+
+
+
+
+
+
 
 
 
